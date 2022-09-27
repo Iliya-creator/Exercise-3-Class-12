@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'dynamic-button-event-binding';
   isDisabled: boolean = true;
+  changeStatus(){
+    if (this.isDisabled == true){
+      this.isDisabled = false;
+    }else{
+      this.isDisabled = true;
+    }
+  }
 }
